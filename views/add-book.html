@@ -7,6 +7,9 @@
 
                     <label for="bookTitleTextField">Titre: </label>
                     <input type="text" name="bookTitleTextField" id="bookTitleTextField" data-ng-model="newBook.title" autofocus/>
+                    
+                    <label for="bookTitleTextField">Sous-titre: </label>
+                    <input type="text" name="bookTitleTextField" id="bookSubTitleTextField" data-ng-model="newBook.subtitle" autofocus/>
 
                     <label for="bookAuthorTextField">Auteur: </label>
                     <input type="text" name="bookAuthorTextField" id="bookAuthorTextField" data-ng-model="newBook.author"/>
@@ -17,18 +20,15 @@
                     <label for="bookDateTextField">Date de parution: </label>
                     <input type="text" name="bookDateTextField" id="bookDateTextField" data-ng-model="newBook.date"/>
 
-                    <label for="bookTypeTextField">Genre: </label>
-                    <input type="text" name="bookTypeTextField" id="bookTypeTextField" data-ng-model="newBook.type"/>
+                    <label for="bookTypeTextField">Description: </label>
+                    <input type="text" name="bookTypeTextField" id="bookTypeTextField" data-ng-model="newBook.description" />
 
-                    <label for="bookKindTextField">Domaine: </label>
-                    <input type="text" name="bookKindTextField" id="bookKindTextField" data-ng-model="newBook.kind"/>
-
-                    <label for="booksNumberTextField">Nombre d'exemplaires: </label>
-                    <input type="number" name="booksNumberTextField" id="booksNumberTextField" data-ng-model="newBook.number"/>
+                    <label for="booksNumberTextField">Nombre de pages: </label>
+                    <input type="number" name="booksNumberTextField" id="booksNumberTextField" data-ng-model="newBook.numberOfPages"/>
 
                     <input type="submit" name="addBookButton" id="addBookButton" value="Ajouter le livre" data-ng-click="addBook()"/>
 
-                    <p id="updateStatus">Status</p>
+                    <p id="updateStatus" ng-model="updateStatus"></p>
                 </fieldset>
             </form>
 

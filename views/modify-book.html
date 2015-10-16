@@ -5,10 +5,10 @@
             <fieldset>
                 <legend>Entrer les informations sur le livre à modifier</legend>
 
-                <input type="text" name="booksInfos" id="booksInfos" placeholder="Rechercher..."  list="booksList" data-ng-model="enteredSearch"
-                       ng-enter="validateSearch()" autofocus/>
+                <input type="search" name="booksInfos" id="booksInfos" placeholder="Rechercher..."  list="booksList"
+                       data-ng-model="enteredSearch" ng-enter="validateSearch()"/>
                 <datalist id="booksList">
-                    <option data-ng-repeat="book in booksInfos track by $index" data-ng-value="book.onOneLine"> {{book.onOneLine}}</option>
+                    <option data-ng-repeat="book in books track by $index" data-ng-value="book.onOneLine"></option>
                 </datalist>
 
                 <br/>

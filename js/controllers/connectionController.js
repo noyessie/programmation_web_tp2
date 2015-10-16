@@ -2,8 +2,8 @@
  * Created by James on 15/10/2015.
  */
 
-applicationModule.controller('connectionController', function($scope , user) {
+applicationModule.controller('connectionController', function($scope , userFactory) {
 	$scope.login = function () {
-        user.addUserInfos($scope.newUserInfos);
+        userFactory.addUserInfos($scope.newUserInfos);
     }
 });
