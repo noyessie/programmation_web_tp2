@@ -1,0 +1,22 @@
+<div id="books-view" ng-controller="consultBookController">
+    <div class="book" ng-repeat="book in books">
+    	<div class="result">
+    		<span class="image">
+		        <a href="#/books/{{$index}}/show" title=""><img src="medias/images/default_cover.jpg" height="70"></a>
+		    </span>
+		    <span class="details">
+		        <h3>
+		            <a href="#/books/{{$index}}/show" class="results"> {{book.title}} </a>
+		        </h3>
+		        <span class="small">
+		            by <a href="#" class="results">{{book.by_statement}}</a>
+		        </span>
+		        <span class="meta">
+		            <span class="type book small">edition</span> -<em ng-repeat="p in book.publishers"> {{p}} </em>
+		            <!-- <span class="publish-dae book small">{{ book.publish_date }} </span>
+		            <span class="pagination book small">{{ book.number_of_pages }}p </span> -->
+		        </span>
+		    </span>
+    	</div>
+	</div>
+</div>

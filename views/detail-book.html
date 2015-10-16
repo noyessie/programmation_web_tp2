@@ -1,0 +1,37 @@
+<div class="detail-book">
+	<div class="cover">
+		<img class="cover-img" src="medias/images/default_cover-m.jpg">
+	</div>
+	<div class="detail">
+		<section>
+			<h1 class="title">
+				<strong>{{book.title}}</strong>
+				<br> {{book.by_statement}}
+			</h1>
+			<h4 class="publisher">
+				Published <strong>{{ book.publish_date }}</strong>
+			by <strong ng-repeat="p in book.publishers"> {{p}} </strong>
+			<strong ng-repeat="p in book.publish_place"><span ng-show={{$first}}>in</span> {{p}} </strong>.
+			</h4>
+		</section>
+		<section class="physical">
+			<h3>
+				The Physical Object
+			</h3>
+			<div class="meta">
+				<div>
+					<span>Pagination </span>
+					<span> {{book.pagination}}p/ </span>
+				</div>
+				<div>
+					<span>Number of pages </span>
+					<span> {{book.number_of_pages}}p/ </span>
+				</div>
+			</div>
+		</section>
+		<section class="description">
+			<h3>Description</h3>
+			{{book.description}}
+		</section>
+	</div>
+</div>

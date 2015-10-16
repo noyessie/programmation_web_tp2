@@ -1,0 +1,35 @@
+
+        <div id="addBookDiv">
+
+            <form method="post">
+                <fieldset>
+                    <legend>Entrer les informations sur le livre à ajouter</legend>
+
+                    <label for="bookTitleTextField">Titre: </label>
+                    <input type="text" name="bookTitleTextField" id="bookTitleTextField" data-ng-model="newBook.title" autofocus/>
+
+                    <label for="bookAuthorTextField">Auteur: </label>
+                    <input type="text" name="bookAuthorTextField" id="bookAuthorTextField" data-ng-model="newBook.author"/>
+
+                    <label for="bookEditionTextField">Edition: </label>
+                    <input type="text" name="bookEditionTextField" id="bookEditionTextField" data-ng-model="newBook.edition"/>
+
+                    <label for="bookDateTextField">Date de parution: </label>
+                    <input type="text" name="bookDateTextField" id="bookDateTextField" data-ng-model="newBook.date"/>
+
+                    <label for="bookTypeTextField">Genre: </label>
+                    <input type="text" name="bookTypeTextField" id="bookTypeTextField" data-ng-model="newBook.type"/>
+
+                    <label for="bookKindTextField">Domaine: </label>
+                    <input type="text" name="bookKindTextField" id="bookKindTextField" data-ng-model="newBook.kind"/>
+
+                    <label for="booksNumberTextField">Nombre d'exemplaires: </label>
+                    <input type="number" name="booksNumberTextField" id="booksNumberTextField" data-ng-model="newBook.number"/>
+
+                    <input type="submit" name="addBookButton" id="addBookButton" value="Ajouter le livre" data-ng-click="addBook()"/>
+
+                    <p id="updateStatus">Status</p>
+                </fieldset>
+            </form>
+
+        </div>

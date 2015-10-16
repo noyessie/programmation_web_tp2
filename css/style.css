@@ -1,0 +1,204 @@
+input {
+    display: block;
+}
+
+legend {
+    font-family: helvetica, BrixSans, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: solid 1px #dcdcdc;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+
+input[type="text"]:focus, input[type="text"].focus {
+    border: solid 1px #707070;
+    box-shadow: 0 0 5px 1px #969696;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    background: #83a01c;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b6d14c), color-stop(100%,#83a01c));
+    background: -moz-linear-gradient(center top, #b6d14c 0%, #83a01c 100%);
+    -webkit-box-shadow: 0px 1px 0px 0px #d1f25a inset, 0px -1px 0px 0px #99bc27 inset, 1px 2px 5px 0px #c9c9c9;
+    -moz-box-shadow: 0px 1px 0px 0px #d1f25a inset, 0px -1px 0px 0px #99bc27 inset, 1px 2px 5px 0px #c9c9c9;
+    box-shadow: 0px 1px 0px 0px #d1f25a inset, 0px -1px 0px 0px #99bc27 inset, 1px 2px 5px 0px #c9c9c9;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-shadow: 1px 1px 0px #648018;
+    padding: 10px 20px;
+    display: block;
+    border-color: #97b134;
+    border-width: 1px;
+    border-style: solid;
+    font-family: Lucida Grande, arial;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bbda4c), color-stop(100%,#84a01d));
+    background: -moz-linear-gradient(center top, #bbda4c 0%, #84a01d 100%);
+    text-shadow: 4px 1px 5pxs;
+}
+input[type="submit"]:active {
+    background: #84a01d;
+    -webkit-box-shadow: 0px 2px 5px 0px #59691b inset;
+    -moz-box-shadow: 0px 2px 5px 0px #59691b inset;
+    box-shadow: 0px 2px 5px 0px #59691b inset;
+    text-shadow: 0px 0px 2px #242e07;
+    border-color: #5c6b2f;
+}
+
+button#facebook {
+    border-color: #2d5073;
+    background-color: #3b5998;
+    background-image: url(http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png);
+}
+
+button#googleplus {
+    border-color: #111;
+    background-color: #cc3c2a;
+    text-shadow: #333 -1px -1px 0;
+    background-image: url("../medias/images/Google-plus-icon.png");
+}
+
+div.socialWrap button {
+    padding-right: 45px;
+    height: 35px;
+    background: none;
+    border: none;
+    display: block;
+    background-size: 35px 35px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    color: white;
+    font-family:"Merriweather Sans", sans-serif;
+    font-size: 14px;
+    margin-bottom: 15px;
+    width: 205px;
+    border-bottom: 2px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    box-shadow: 0 4px 2px -2px gray;
+    text-shadow: rgba(0, 0, 0, .5) -1px -1px 0;
+}
+
+
+/* 
+
+    ############ LISTING DES LIVRES ############
+ */
+
+ .result{
+    width:100%;
+    padding:0 0 10px 0;
+    border-bottom: 1px solid #EBEBEB;
+ }
+
+ .result span.image{
+    display:block;
+    float:left;
+    height:70px;
+    margin-right: 10px;
+    width:75px;
+    overflow: hidden;
+    text-align:center;
+    clear:both;
+ }
+
+ .result span{
+    font-family: "Lucida Grande",Verdana,Geneva,Helvetica,Arial,sans-serif;
+ }
+
+.details{
+    margin:0px !important;
+    color:#666;
+}
+
+.details h3{
+    font-size:1em;
+    font-weight: bold;
+}
+
+a.results:link{
+    color:#000;
+    text-decoration: none;
+}
+
+.small {
+    font-size: 12px !important;
+    font-weight: normal !important;
+}
+
+span.meta {
+    font-size: 0.75em;
+    display: block;
+    color: #666;
+}
+
+span.book {
+    background-color: #35672E;
+    color: #FFF;
+    padding: 1px;
+    opacity: 0.5;
+}
+
+/* 
+
+    ############ DETAILS D'UN LIVRES ############
+ */
+.detail-book{
+    text-align: left;
+}
+
+.detail-book .cover{
+    float:left;
+    width:180px;
+    height:500px;
+    min-height: 10px;
+    padding-right: 10px;
+}
+
+.detail-book .detail{
+    font-family: Georgia,"Palatino Linotype","Book Antiqua",Palatino,"Times New Roman",serif;
+}
+
+.detail-book .title{
+    font-size:1.125em;
+    font-weight: normal;
+}
+
+.detail-book h4{
+    font-weight: normal;
+}
+
+.detail-book section{
+    display:block;
+    margin:30px;
+}
+
+.detail-book section h3{
+
+}
+
+.detail-book .physical .meta{
+    display:table;
+}
+
+.detail-book .physical .meta > div{
+    display:table-row;
+}
+
+.detail-book .physical .meta > div > span{
+    display:table-cell;
+    padding-right:15px;
+}

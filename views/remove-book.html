@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta content="James" name="James"/>
+    <link rel="stylesheet" href="../css/style.css" type="text/css"/>
+    <title>Supprimer un livre</title>
+</head>
+<body>
+
+<header>
+
+</header>
+
+<section>
+    <div id="addBookDiv">
+
+        <form method="post">
+            <fieldset>
+                <legend>Entrer les informations sur le livre à supprimer</legend>
+
+                <input type="search" name="booksInfos" id="booksInfos" placeholder="Rechercher..."  autofocus/>
+                <br/>
+
+                <label for="bookTitleTextField">Titre: </label>
+                <input type="text" name="bookTitleTextField" id="bookTitleTextField"/>
+
+                <label for="bookAuthorTextField">Auteur: </label>
+                <input type="text" name="bookAuthorTextField" id="bookAuthorTextField" />
+
+                <label for="bookEditionTextField">Edition: </label>
+                <input type="text" name="bookEditionTextField" id="bookEditionTextField" />
+
+                <label for="bookDateTextField">Date de parution: </label>
+                <input type="text" name="bookDateTextField" id="bookDateTextField" />
+
+                <label for="bookTypeTextField">Genre: </label>
+                <input type="text" name="bookTypeTextField" id="bookTypeTextField" />
+
+                <label for="bookKindTextField">Domaine: </label>
+                <input type="text" name="bookKindTextField" id="bookKindTextField" />
+
+                <label for="booksNumberTextField">Nombre d'exemplaires: </label>
+                <input type="number" name="booksNumberTextField" id="booksNumberTextField" />
+
+                <input type="submit" name="removeBookButton" id="removeBookButton" value="Supprimer le livre"/>
+
+                <p id="updateStatus">Status</p>
+            </fieldset>
+        </form>
+
+    </div>
+</section>
+
+<footer>
+
+</footer>
+
+</body>

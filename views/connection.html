@@ -1,0 +1,14 @@
+<div id="loginDiv">
+    <form method="post" action="#/home">
+        <fieldset>
+            <legend>Connexion</legend>
+            <input type="text" id="loginTextField" placeholder="Login" data-ng-model="newUserInfos.login" autofocus />
+            <input type="text" id="passwordTextField" placeholder="Password" data-ng-model="newUserInfos.password" />
+            <button id="loginButton" data-ng-click="login()">Se connecter</button>
+            <a href="http://www.polytechnique.cm">Créer un compte</a>
+            <br/>
+            <div class="socialWrap"><button id="facebook">Se connecter avec Facebook</button>
+                <button id="googleplus">Se connecter avec Google+</button></div>
+        </fieldset>
+    </form>
+</div>
